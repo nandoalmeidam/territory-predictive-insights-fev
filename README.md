@@ -289,13 +289,6 @@ As sugestões foram avaliadas durante o desenvolvimento e verificadas por meio d
 
 A responsabilidade pelas decisões de implementação e pela entrega permanece com a equipe.
 
-
-## 14. Repositório
-
-**GitHub:** https://github.com/nandoalmeidam/territory-predictive-insights-fev
-
-**Branch de desenvolvimento:** `dev`
-
 ---
 
 **FIAP — Global Solution 2026 | Pluvia — Monitoramento Inteligente de Chuvas**
