@@ -272,13 +272,16 @@ Como evolução futura, o projeto poderia incorporar sensores físicos, fontes m
 
 ## 12. Organização da equipe
 
-| Integrante | Responsabilidades |
-|---|---|
-| Fernando | Integração do projeto, menu, configuração Maven, Git/GitHub e documentação |
-| Guilherme | Modelagem de domínio, sensores e exceções |
-| Gabriel | Persistência, previsões, alertas e testes |
+| Integrante | RM | Responsabilidades |
+|---|---|---|
+| Fernando de Almeida Godoi Martines | 564820 | Integração do projeto, menu, configuração Maven, Git/GitHub e documentação |
+| Gabriel Ber Soares Tarone | 563520 | Persistência, previsões, alertas e testes |
+| Guilherme de Freitas Salgado | 562494 | Modelagem de domínio, sensores e exceções |
 
-A equipe organizou o desenvolvimento em componentes separados, buscando facilitar manutenção, testes e integração.
+
+A equipe organizou o desenvolvimento em componentes separados, buscando facilitar a manutenção, os testes e a integração do sistema.
+
+O desenvolvimento foi realizado de forma colaborativa, com divisão de responsabilidades e utilização do GitHub para versionamento do código.
 
 
 ## 13. Uso de inteligência artificial
