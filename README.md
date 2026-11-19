@@ -288,8 +288,6 @@ O desenvolvimento foi realizado de forma colaborativa, com divisão de responsab
 
 Ferramentas de inteligência artificial foram utilizadas como apoio ao desenvolvimento e à revisão do projeto, incluindo esclarecimento de conceitos, análise de erros, organização da documentação e sugestões de implementação.
 
-As sugestões foram avaliadas durante o desenvolvimento e verificadas por meio da execução da aplicação, testes automatizados e inspeção do código.
-
 A responsabilidade pelas decisões de implementação e pela entrega permanece com a equipe.
 
 ---
