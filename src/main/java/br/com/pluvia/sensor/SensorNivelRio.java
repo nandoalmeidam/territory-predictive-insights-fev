@@ -1,49 +1,47 @@
+
 package br.com.pluvia.sensor;
 
 import java.util.Random;
 
 import br.com.pluvia.exception.FonteIndisponivelException;
 
-// Sensor que simula o nível da água de um rio.
+// Sensor responsável por simular o nível da água de um rio.
 public class SensorNivelRio implements Sensor {
 
-	// Gerador de valores aleatórios.
-	private final Random random = new Random();
+    private static final double NIVEL_MAXIMO = 5.0;
 
-	// Indica se o sensor está funcionando.
-	private boolean funcionando;
+    private final Random random = new Random();
 
-	// Construtor: inicia o sensor funcionando.
-	public SensorNivelRio() {
-		this.funcionando = true;
-	}
+    // Define se o sensor está operacional.
+    private boolean funcionando = true;
 
-	// Realiza uma leitura simulada do nível do rio.
-	@Override
-	public double lerValor() {
+    // Realiza uma leitura simulada entre 0 e 5 metros.
+    @Override
+    public double lerValor() {
 
-		if (!estaFuncionando()) {
-			throw new FonteIndisponivelException("O sensor de nível do rio está indisponível.");
-		}
+        if (!estaFuncionando()) {
+            throw new FonteIndisponivelException(
+                "O sensor de nível do rio está indisponível."
+            );
+        }
 
-		// Simula um nível entre 0 e 5 metros.
-		return random.nextDouble() * 5;
-	}
+        return random.nextDouble() * NIVEL_MAXIMO;
+    }
 
-	// Verifica se o sensor está operacional.
-	@Override
-	public boolean estaFuncionando() {
-		return funcionando;
-	}
+    // Verifica a disponibilidade do sensor.
+    @Override
+    public boolean estaFuncionando() {
+        return funcionando;
+    }
 
-	// Identifica o tipo de sensor.
-	@Override
-	public String getTipo() {
-		return "Nivel do Rio";
-	}
+    // Retorna o tipo do sensor.
+    @Override
+    public String getTipo() {
+        return "Nivel do Rio";
+    }
 
-	// Permite ativar ou desativar o sensor.
-	public void setFuncionando(boolean funcionando) {
-		this.funcionando = funcionando;
-	}
+    // Altera o estado operacional do sensor.
+    public void setFuncionando(boolean funcionando) {
+        this.funcionando = funcionando;
+    }
 }
